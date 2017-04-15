@@ -66,4 +66,5 @@ GNU General Public License v3.0 (GPL). Полное описание досту�
 По всем вопросам можно писать сюда:
 
 Email: me@slinkov.xyz
-VK: vk.com/slruslan 
+
+VK: vk.com/slruslan(https://vk.com/slruslan) 
