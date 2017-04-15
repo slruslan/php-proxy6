@@ -1,11 +1,19 @@
 # Proxy6.net PHP API wrapper
 
-![Packagist](https://img.shields.io/packagist/dt/slruslan/php-proxy6.svg)
-![License GPL](http://img.shields.io/badge/license-GPL-blue.svg)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/slruslan/php-proxy6.svg?style=flat-square)](https://packagist.org/packages/slruslan/php-proxy6)
+![License GPL](http://img.shields.io/badge/license-GPL-blue.svg?style=flat-square)
 
 Простая PHP обертка для API сервиса Proxy6.net.
 
 Написана в соответствии с [официальной документацией](https://proxy6.net/developers).
+
+## Установка
+
+С помощью Composer: 
+
+``` bash
+$ composer require slruslan/php-proxy6
+```
 
 ## Использование
 
@@ -48,6 +56,10 @@ $api->prolong(30, [1, 2, 3]);
 В случае возникновения каких-либо проблем, напишите в Issue tracker, я постараюсь помочь в зависимости от загрузки, но ничего не обещаю. Библиотека будет допиливаться по мере личной необходимости. 
 
 Если кто-то поможет с написанием корректной документации и доработкой самой библиотеки - в частности, обработкой ошибок, более удобным представлением ответов и т.д. - приму любые pull requests и буду очень сильно благодарен :)
+
+## Лицензия
+
+GNU General Public License v3.0 (GPL). Полное описание доступно в файле [LICENSE](LICENSE).
 
 ## Контакты для связи:
 
