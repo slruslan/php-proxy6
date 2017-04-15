@@ -1,0 +1,21 @@
+{
+    "name": "slruslan/php-proxy6",
+    "description": "A simple PHP wrapper for the Proxy6.net service API",
+    "version": "1.0",
+    "license": "GPL",
+    "homepage": "https://github.com/slruslan/php-proxy6",
+    "authors": [
+        {
+            "name": "Ruslan Slinkov",
+            "email": "me@slinkov.xyz",
+            "homepage": "http://slinkov.xyz"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {"Slruslan\\Proxy6\\": "src/"}
+    }
+}
