@@ -12,7 +12,7 @@
 С помощью Composer: 
 
 ``` bash
-$ composer require slruslan/php-proxy6 --dev
+$ composer require slruslan/php-proxy6
 ```
 
 ## Использование
