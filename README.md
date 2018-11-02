@@ -27,6 +27,9 @@ $api = new \Slruslan\Proxy6\Wrapper('API_KEY');
 Использование библиотеки:
 ```php
 
+// Получение баланса:
+$api->getBalance();
+
 // Получение списка всех прокси:
 $api->getProxy(ProxyState::ALL);
 
