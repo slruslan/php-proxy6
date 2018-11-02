@@ -256,6 +256,7 @@ class Wrapper
      *
      * @param int $count Кол-во прокси
      * @param int $period Период (дней)
+     *
      * @param string $country Код страны (ISO 3166-1 alpha-2)
      * @see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
      *
@@ -290,11 +291,14 @@ class Wrapper
      *  }
      * }
      *
+     * @param array $params other request params
+     * @see https://proxy6.net/developers
+     *
      * @return stdClass
      */
-    public function buy($count, $period, $country = 'ru', $version = ProxyVersion::IPV6, $type = ProxyType::HTTPS, $descr = '')
+    public function buy($count, $period, $country = 'ru', $version = ProxyVersion::IPV6, $type = ProxyType::HTTPS, $descr = '', $params = [])
     {
-        $params = [
+        $request_data = [
             'count' => $count,
             'period' => $period,
             'country' => $country,
@@ -303,7 +307,7 @@ class Wrapper
             'descr' => $descr
         ];
 
-        return $this->sendRequest('buy', $params);
+        return $this->sendRequest('buy', array_merge($request_data, $params));
     }
 
     /**
