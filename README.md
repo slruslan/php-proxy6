@@ -49,6 +49,22 @@ $api->buy(1, 30, 'ru', ProxyVersion::IPV6);
 $api->prolong(30, [1, 2, 3]);
 ```
 
+### Альтернативный способ покупки прокси
+```php
+$api = new Wrapper($key);
+
+$result = (new ProxyOrder())
+    ->setQuantity(2) // 1 by default
+    ->setCountry('ru')
+    ->setPeriod(30)
+    ->setType(ProxyType::SOCKS5) // HTTPS by default
+    ->setIpVersion(ProxyVersion::IPV4_SHARED) // IPV4 by default
+    ->setDescription('Proxies for taking over the World') // Empty string by default
+    ->setAutoProlongation(true) // false by default
+    ->setReturnListArray(true) // false by default
+    ->process($api);
+```
+
 Все ответы возвращаются в виде разобранного JSON в формате stdObject.
 Примеры ответов можно найти на странице официальной документации - https://proxy6.net/developers.
 
