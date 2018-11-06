@@ -1,7 +1,7 @@
 {
     "name": "slruslan/php-proxy6",
     "description": "A simple PHP wrapper for the Proxy6.net service API",
-    "version": "1.0",
+    "version": "1.1",
     "license": "GPL",
     "homepage": "https://github.com/slruslan/php-proxy6",
     "authors": [
